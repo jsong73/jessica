@@ -1,0 +1,11 @@
+html {
+    scroll-behavior: smooth;
+    background-color:  #faf6f6c2;
+}
+
+body {
+    margin: 0; 
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
