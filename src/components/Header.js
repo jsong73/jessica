@@ -40,14 +40,6 @@ function Header() {
           <Typography variant="headerBio">I'm a self-taught full stack developer interested in all things computer interactions and web development.  </Typography>
         </div>
 
-        <Typography variant="resumeButton">
-        <a 
-            href="https://docs.google.com/document/d/e/2PACX-1vT47jxle8HipsEax-PpypYSnQ_SjnVt6j8kN7Lo1dVXBppBMaD2ZKtrcSHcbSn8UQ/pub" 
-            aria-label="resume" 
-            target="_blank" 
-            rel="noopener noreferrer"> my resume
-        </a>  
-        </Typography>
 
     </ThemeProvider>
   );
