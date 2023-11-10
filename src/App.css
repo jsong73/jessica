@@ -11,15 +11,16 @@ body {
 
 #header{
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    padding-left: 15%;
+    flex-direction: column;
     padding-top: 10%;
+    padding-left: 15%;
     min-height: 100vh;
 }
 
+
 .header-bio{
-    max-width: 45%;
     text-align: justify;
+    max-width: 45%;
     padding-bottom: 50px;
 }

@@ -2,6 +2,7 @@ import React from "react"
 import Typewriter from "typewriter-effect"
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 import Button from "@mui/material/Button"
 
 const theme = createTheme({
@@ -12,7 +13,7 @@ const theme = createTheme({
         wordSpacing: "0.3em",
       },
       typeWriter:{
-        fontSize: 70,
+        fontSize: 65,
         color: "#F5F1ED",
       },
     },
@@ -27,7 +28,7 @@ function Header() {
         <Typography variant="typeWriter">
         <Typewriter
             onInit={(typewriter) => {
-              typewriter.typeString("hi, i'm jessica. ").start();
+              typewriter.typeString("{ hi, i'm jessica } ").start();
             }}
           />
         </Typography>
@@ -37,19 +38,24 @@ function Header() {
         </div>
 
         <Button
+          href="https://drive.google.com/file/d/1l1Kyr2mM1-7HqaS34Kwf7xlVKCHLiG3w/view"
+          target="_blank" 
           variant="outlined"
           size="large"
           sx={{
-          color: "rgba(245, 241, 237, 0.6)", "&:hover":{
-          color: "#F5F1ED"
+            color: "rgba(245, 241, 237, 0.6)",
+            "&:hover": {
+              borderColor: "#F5F1ED" ,
+              color:"#F5F1ED"
           },
-          fontSize: 20,
+          fontSize: 15,
           textTransform: "none",
-          padding: 2,
+          padding: 1.5,
+          fontFamily: "NTR, sans-serif" ,
           borderColor: "#F5F1ED"
    
         }}
-        > resume!
+        > view my resume <KeyboardArrowRightOutlinedIcon />  
       </Button>
 
       </div>
