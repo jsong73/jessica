@@ -9,6 +9,7 @@ body {
     font-family: 'NTR', sans-serif;
 }
 
+/* header css */
 #header{
     display: flex;
     align-items: flex-start;
@@ -24,3 +25,49 @@ body {
     max-width: 45%;
     padding-bottom: 50px;
 }
+
+/* nav css */
+/* .nav-icons {
+    padding-top: 42px;
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 8px;
+  } */
+
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    position: fixed;
+    right: 0;
+    padding-right: 5%;
+    bottom: 15%;
+  }
+
+  .navbar-items a {
+    text-decoration: none; 
+    color: #F5F1ED;
+    font-weight: bold;
+  }
+  
+  .navbar-items{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    letter-spacing: 0em;
+    line-height: 1.8em;
+    padding: 0.5em;
+  }
+
+  .nav-icons{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-icons a {
+    margin-right:8%; 
+  }
