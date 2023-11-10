@@ -48,12 +48,12 @@ function Header() {
               borderColor: "#F5F1ED" ,
               color:"#F5F1ED"
           },
-          fontSize: 15,
+          fontSize: 16,
           textTransform: "none",
           padding: 1.5,
           fontFamily: "NTR, sans-serif" ,
-          borderColor: "#F5F1ED"
-   
+          borderColor: "#F5F1ED",
+          fontWeight: "bold"
         }}
         > view my resume <KeyboardArrowRightOutlinedIcon />  
       </Button>

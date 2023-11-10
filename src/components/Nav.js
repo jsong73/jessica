@@ -19,7 +19,6 @@ function Nav() {
     <div className="navbar">
         <Sidenav>
 
-   
         <Sidenav.Body>
         <div className="navbar-items">
             {navItems.map((navItem, i) => (
@@ -28,9 +27,6 @@ function Nav() {
         </div>
         </Sidenav.Body>
         </Sidenav>
-
-
-
 
 
     <div className="nav-icons">

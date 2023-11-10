@@ -19,7 +19,6 @@ body {
     min-height: 100vh;
 }
 
-
 .header-bio{
     text-align: justify;
     max-width: 45%;
@@ -27,15 +26,6 @@ body {
 }
 
 /* nav css */
-/* .nav-icons {
-    padding-top: 42px;
-    width: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 8px;
-  } */
-
   .navbar{
     display: flex;
     flex-direction: column;
