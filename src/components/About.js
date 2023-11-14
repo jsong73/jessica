@@ -6,11 +6,10 @@ function About() {
 
   return (
     <div id="about">
-        <div className="about-title-container">
-            <span className="about-title"> + about me </span>
+        <div className="container">
+            <span className="container-header"> + about me </span>
         </div>
 
-        
 
         <div className="about-bio-container">
             <div className="about-bio">
@@ -32,7 +31,7 @@ function About() {
         </div> 
 
         <div className="profile-img">
-            <img draggable="false" src={profilepic} />
+            <img draggable="false" src={profilepic} alt="profile pic"/>
         </div>
         
         

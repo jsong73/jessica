@@ -9,6 +9,17 @@ body {
     font-family: 'NTR', sans-serif;
 }
 
+.container{
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.container-header{
+    color:#F5F1ED;
+    font-size: 50px;
+    font-weight: bold;
+}
+
 /* header css */
 #header{
     display: flex;
@@ -16,7 +27,8 @@ body {
     flex-direction: column;
     padding-top: 20%;
     padding-left: 15%;
-    min-height: 70vh;
+    /* component space */
+    min-height: 65vh;
 }
 
 .header-bio {
@@ -63,19 +75,12 @@ body {
 }
 
 /* about me css */
-  
 #about {
     padding-left: 15%;
     padding-right: 25%;
-    min-height: 60vh;
-    /* margin-top: -20%;  */
+    min-height: 65vh;
 }
 
-.about-title {
-    color:#F5F1ED;
-    font-size: 50px;
-    font-weight: bold;
-}
 
 .about-bio-container{
     display: flex;
@@ -122,6 +127,10 @@ body {
 .profile-img {
     padding-left: 40px;
  }
+
+ .profile-img:hover {
+    filter: blur(1.5px);
+ }
   
 .profile-img img {
     max-width: 300px;
@@ -129,3 +138,11 @@ body {
     margin-left: 40px;
     box-shadow: inset 0 0 10px 10px #000000e8;
 }
+
+/* projects css */
+#projects {
+    padding-left: 15%;
+    padding-right: 25%;
+    min-height: 65vh;
+  }
+  
