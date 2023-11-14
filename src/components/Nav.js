@@ -32,10 +32,10 @@ function Nav() {
         <a href="mailto:jessicajinsong@gmail.com">
          <EmailIcon style={{ fontSize: 25, color: "rgba(245, 241, 237, 0.6)" }}></EmailIcon>
         </a>
-        <a href="https://github.com/jsong73" target="_blank" >
+        <a href="https://github.com/jsong73" target="_blank" rel="noopener noreferrer" >
         <GitHubIcon style={{ fontSize: 25, color: "rgba(245, 241, 237, 0.6)"}}></GitHubIcon>
         </a>
-        <a href="https://www.linkedin.com/in/jessica-jin-song/" target="_blank" >
+        <a href="https://www.linkedin.com/in/jessica-jin-song/" target="_blank" rel="noopener noreferrer">
         <LinkedInIcon style={{ fontSize: 25, color: "rgba(245, 241, 237, 0.6)" }}></LinkedInIcon>
         </a>
     </div>

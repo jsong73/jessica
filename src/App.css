@@ -19,14 +19,14 @@ body {
     min-height: 100vh;
 }
 
-.header-bio{
+.header-bio {
     text-align: justify;
     max-width: 45%;
     padding-bottom: 50px;
 }
 
 /* nav css */
-  .navbar{
+.navbar {
     display: flex;
     flex-direction: column;
     /* align-items: flex-end; */
@@ -34,30 +34,96 @@ body {
     right: 0;
     padding-right: 5%;
     bottom: 15%;
-  }
+}
 
-  .navbar-items a {
+.navbar-items a {
     text-decoration: none; 
     color: #F5F1ED;
     font-weight: bold;
-  }
+}
   
-  .navbar-items{
+.navbar-items {
     display: flex;
     flex-direction: column;
     text-align: right;
     letter-spacing: 0em;
     line-height: 1.8em;
     padding: 0.5em;
-  }
+}
 
-  .nav-icons{
+.nav-icons {
     padding-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
+}
 
-  .nav-icons a {
+.nav-icons a {
     margin-right:8%; 
-  }
+}
+
+/* about me css */
+  
+#about {
+    padding-left: 15%;
+    padding-right: 25%;
+    min-height: 60vh;
+}
+
+.about-title {
+    color:#F5F1ED;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.about-bio-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-bio{
+    color: rgba(245, 241, 237, 0.6);
+    font-size: 18px;
+    max-width: 900px;
+    text-align: justify;
+}
+
+.list{
+    padding-top: 20px;
+}
+
+.skills{
+    color: rgba(245, 241, 237, 0.6);
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 10px));
+    padding-left: 0px;
+}
+
+.skills li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    list-style-type: none;
+}
+
+
+.skills li svg {
+    margin-right: 8px; 
+    margin-top: -5px; 
+}
+
+.skills li:hover{
+    transform: translateY(-5px);
+}
+
+.profile-img {
+    padding-left: 40px;
+ }
+  
+.profile-img img {
+    max-width: 300px;
+    border-radius: 20px;
+    margin-left: 40px;
+    box-shadow: inset 0 0 10px 10px #000000e8;
+}
