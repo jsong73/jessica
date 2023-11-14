@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding-top: 10%;
+    padding-top: 15%;
     padding-left: 15%;
     min-height: 100vh;
 }

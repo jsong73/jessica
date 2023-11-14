@@ -34,7 +34,7 @@ function Header() {
         </Typography>
 
         <div className="header-bio" >
-          <Typography variant="headerBio">I'm a self-taught full stack developer interested in all things computer interactions and web development. I thrive on crafting optimal technical solutions that are both functional and user-centric.  </Typography>
+          <Typography variant="headerBio">I'm a self-taught full stack developer interested in all things computer interactions and web development. I thrive on crafting optimal technical solutions that are both functional and user-centric. </Typography>
         </div>
 
         <Button
