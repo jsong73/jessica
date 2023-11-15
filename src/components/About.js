@@ -20,12 +20,12 @@ function About() {
 
         <div className="skills-container">
             <ul className="skills">
-                <li> <ChevronRightIcon /> React </li>
-                <li> <ChevronRightIcon /> Javascript ES6+</li>
-                <li> <ChevronRightIcon /> GraphQL </li>
-                <li> <ChevronRightIcon /> Typescript </li>
-                <li> <ChevronRightIcon /> Node.js </li>
-                <li> <ChevronRightIcon /> MongoDB </li>
+                <li> <ChevronRightIcon style={{color:"#F5F1ED"}}/> React </li>
+                <li> <ChevronRightIcon style={{color:"#F5F1ED"}}/> Javascript ES6+</li>
+                <li> <ChevronRightIcon style={{color:"#F5F1ED"}}/> GraphQL </li>
+                <li> <ChevronRightIcon style={{color:"#F5F1ED"}}/> Typescript </li>
+                <li> <ChevronRightIcon style={{color:"#F5F1ED"}}/> Node.js </li>
+                <li> <ChevronRightIcon style={{color:"#F5F1ED"}}/> MongoDB </li>
             </ul>
         </div>
         </div> 

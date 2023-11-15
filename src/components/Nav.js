@@ -21,7 +21,7 @@ function Nav() {
         <Sidenav.Body>
         <div className="navbar-items">
             {navItems.map((navItem, i) => (
-                <div> {navItem} </div>
+                <div key={i}> {navItem} </div>
             ))}
         </div>
         </Sidenav.Body>
