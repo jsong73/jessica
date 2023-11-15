@@ -1,3 +1,11 @@
+:root {
+    --background-color-light: rgba(245, 241, 237, 0.6);
+    --text-color-light: #22222263;
+  
+    --background-color-dark: #000000e8;
+    --text-color-dark: #F5F1ED;
+}
+
 html {
     scroll-behavior: smooth;
     background-color:  #000000e8;
@@ -194,7 +202,6 @@ body {
 }
 
 /* footer css */
-
 .footer{
     display: flex;
     align-items: center;
