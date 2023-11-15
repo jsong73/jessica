@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -7,7 +7,19 @@ import LightMode from "./LightMode";
 
 function Nav() {
 
+    const [isDarkMode, setIsDarkMode] = useState(true);
 
+    useEffect(() => {
+    console.log('Dark mode:', isDarkMode);
+    document.body.classList.toggle('dark-mode', isDarkMode);
+    document.body.classList.toggle('light-mode', !isDarkMode);
+    }, [isDarkMode]);
+  
+    const handleModeChange = () => {
+        console.log('Mode changed');
+      setIsDarkMode((prevMode) => !prevMode);
+    };
+  
     const navItems = [
         <a href="#header"> + home </a>,
         <a href="#about">  + about </a>,
@@ -42,7 +54,7 @@ function Nav() {
     </div>
 
       
-    <LightMode />
+    <LightMode isDarkMode={isDarkMode} onChange={handleModeChange} />
   
   </div>
   

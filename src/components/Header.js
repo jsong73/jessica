@@ -5,6 +5,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 import Button from "@mui/material/Button"
 
+
 const theme = createTheme({
     typography: {
       headerBio:{
@@ -13,6 +14,7 @@ const theme = createTheme({
         wordSpacing: "0.3em",
       },
       typeWriter:{
+        fontWeight: "bold",
         fontSize: 65,
         color: "#F5F1ED",
       },
@@ -42,6 +44,7 @@ function Header() {
           target="_blank" 
           variant="outlined"
           size="large"
+          className="header-button"
           sx={{
             color: "rgba(245, 241, 237, 0.6)",
             "&:hover": {

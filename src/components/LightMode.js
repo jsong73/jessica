@@ -2,7 +2,7 @@ import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
 
 
-const LightMode = styled(Switch)(({ theme }) => ({
+const LightModeSwitch = styled(Switch)(({ theme }) => ({
   width: 80,
   height: 34,
   padding: 7,
@@ -50,5 +50,9 @@ const LightMode = styled(Switch)(({ theme }) => ({
     borderRadius: 20 / 2,
   },
 }));
+
+const LightMode = ({ onChange }) => {
+    return <LightModeSwitch onChange={onChange} />;
+  };
 
 export default LightMode;
