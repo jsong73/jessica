@@ -4,6 +4,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Sidenav } from "rsuite";
 import LightMode from "./LightMode";
+import "../styles/Nav.css"
+
+const isMobileView = window.innerWidth < 600;
 
 function Nav() {
 
@@ -29,6 +32,7 @@ function Nav() {
   return (
 
     <div className="navbar">
+        {!isMobileView && (
         <Sidenav>
 
         <Sidenav.Body>
@@ -40,7 +44,7 @@ function Nav() {
         </Sidenav.Body>
         </Sidenav>
 
-
+)}
     <div className="nav-icons">
         <a href="mailto:jessicajinsong@gmail.com">
          <EmailIcon style={{ fontSize: 25, color: "rgba(245, 241, 237, 0.6)" }}></EmailIcon>

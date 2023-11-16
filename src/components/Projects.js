@@ -2,6 +2,7 @@ import React from "react"
 import WebAssetOutlinedIcon from '@mui/icons-material/WebAssetOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
+import "../styles/Projects.css"
 
 function Projects() {
     const projects = {
@@ -37,7 +38,7 @@ function Projects() {
                     {Object.keys(projects).map((project, i) =>(
                         <li className="projects-card" key={project}>
                             <div className="projects-header">
-                                <WebAssetOutlinedIcon style={{ color: "#F5F1ED" }}/>
+                                <WebAssetOutlinedIcon className="projects-folder"/>
 
                                 <a href={projects[project]["github"]} target="_blank" rel="noopener noreferrer" >
                                     <GitHubIcon style={{ fontSize: 25, color: "rgba(245, 241, 237, 0.6)"}}></GitHubIcon>

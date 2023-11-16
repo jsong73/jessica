@@ -3,6 +3,7 @@ import Typewriter from "typewriter-effect"
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
+import "../styles/Header.css"
 
 const theme = createTheme({
     typography: {

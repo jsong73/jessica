@@ -1,6 +1,7 @@
 import React from "react"
 import profilepic from "../assets/profilepic.jpg"
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import "../styles/About.css"
 
 function About() {
 

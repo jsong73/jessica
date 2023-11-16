@@ -1,0 +1,35 @@
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    padding-right: 5%;
+    bottom: 15%;
+}
+
+.navbar-items a {
+    text-decoration: none; 
+    color: #F5F1ED;
+    font-weight: bold;
+}
+  
+.navbar-items {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    letter-spacing: 0em;
+    line-height: 1.8em;
+    padding: 0.5em;
+}
+
+.nav-icons {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-icons a {
+    margin-right:8%; 
+}
