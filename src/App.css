@@ -1,6 +1,7 @@
+/* light mode dark mode css */
 :root {
-    --background-color-light: rgb(167, 167, 167);
-    --text-color-light: #222222bb;
+    --background-color-light: rgba(163, 163, 163, 0.863);
+    --text-color-light: #313131d2;
     
     --background-color-dark:#00000000;
     --text-color-dark: #F5F1ED;
@@ -16,6 +17,33 @@ body.light-mode *{
     color: var(--text-color-light) ;
 }
 
+body.light-mode .header-button {
+    color: var(--text-color-light);
+    border:  #919191 solid 2px;
+}
+
+body.light-mode .header-button a{
+    color: var(--text-color-light);
+}
+
+body.light-mode .header-button a:hover{
+    color: #000000d3;
+}
+
+body.light-mode .projects-card {
+    background-color:  #919191;
+}
+body.light-mode .projects-card *{
+    background-color:  #919191;
+}
+
+body.light-mode .navbar-items *{
+    color: var(--text-color-light) ;
+}
+
+body.light-mode .skills li:hover{
+    color: #000000;
+}
 
 html {
     scroll-behavior: smooth;
@@ -55,6 +83,29 @@ body {
     max-width: 45%;
     padding-bottom: 50px;
 }
+
+.header-button{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color:#00000000;
+    border: var(--text-color-dark) solid 1px;
+    border-radius: 5%;
+    padding: 1rem;
+    font-family: 'NTR', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.header-button a{
+    text-decoration: none;
+    color:rgba(245, 241, 237, 0.6);
+}
+
+.header-button a:hover{
+    color:#F5F1ED
+}
+
 
 /* nav css */
 .navbar {
