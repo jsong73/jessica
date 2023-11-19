@@ -42,8 +42,10 @@ function Header() {
           className="header-button"
         >
        <a 
+       className="resume-btn"
        href="https://drive.google.com/file/d/1l1Kyr2mM1-7HqaS34Kwf7xlVKCHLiG3w/view" 
-       target="_blank" rel="noreferrer" > view my resume </a><KeyboardArrowRightOutlinedIcon style={{color:"rgba(245, 241, 237, 0.6)"}} />  
+       target="_blank" rel="noreferrer" > view my resume </a><KeyboardArrowRightOutlinedIcon 
+       style={{color:"rgba(245, 241, 237, 0.6)"}} />  
       </button>
 
       </div>

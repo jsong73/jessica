@@ -1,7 +1,7 @@
 
 :root {
-    --background-color-light: rgba(163, 163, 163, 0.863);
-    --text-color-light: #313131d2;
+    --background-color-light: #eee7e1;
+    --text-color-light: #1a1818;
     
     --background-color-dark:#00000000;
     --text-color-dark: #F5F1ED;
@@ -30,13 +30,16 @@ body.light-mode .header-button a:hover{
     color: #000000d3;
 }
 
+/* project card light mode */
 body.light-mode .projects-card {
-    background-color:  #919191;
-}
-body.light-mode .projects-card *{
-    background-color:  #919191;
+    background-color:  #dcd4cb;
 }
 
+body.light-mode .projects-card *{
+    background-color:  #dcd4cb;
+}
+
+/* nav light mode */
 body.light-mode .navbar-items *{
     color: var(--text-color-light) ;
 }
@@ -45,6 +48,7 @@ body.light-mode .skills li:hover{
     color: #000000;
 }
 
+/* project icon light mode */
 body.light-mode .projects-folder *{
     color: #000000;
 }
