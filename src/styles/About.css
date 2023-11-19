@@ -60,3 +60,20 @@
     margin-left: 40px;
     box-shadow: inset 0 0 10px 10px #000000e8;
 }
+
+@media only screen and (max-width: 600px) {
+
+#about {
+    height: unset;
+}
+  
+.about-bio-container {
+    display: unset;
+ 
+}
+  
+.profile-img img {
+    display: none;
+}
+}
+

@@ -58,3 +58,18 @@
     font-style: italic;
     font-size: 15px;
 }
+
+@media (max-width: 1080px) {
+.projects-columns {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+}
+
+
+@media only screen and (max-width: 600px) {
+#projects {
+    height: unset;
+
+}
+
+}
