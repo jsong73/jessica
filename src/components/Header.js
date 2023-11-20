@@ -14,7 +14,7 @@ const theme = createTheme({
       },
       typeWriter:{
         fontWeight: "bold",
-        fontSize: 65,
+        fontSize: 80,
         color: "#F5F1ED",
       },
     },
@@ -23,6 +23,7 @@ const theme = createTheme({
 function Header() {
   return (
     <ThemeProvider theme={theme}>
+      
       <div id="header">
 
         
