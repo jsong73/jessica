@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 import "../styles/Header.css"
+import ThreeScene from "./ThreeScene";
 
 const theme = createTheme({
     typography: {
@@ -25,6 +26,7 @@ function Header() {
     <ThemeProvider theme={theme}>
       
       <div id="header">
+      <ThreeScene />
 
         
         <Typography variant="typeWriter">
