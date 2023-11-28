@@ -9,7 +9,6 @@ const sceneRef = useRef();
 useEffect(() => {
 const scene = new THREE.Scene();
 
-
 const camera = new THREE.PerspectiveCamera(
     45,
     400 / 300,
@@ -18,7 +17,7 @@ const camera = new THREE.PerspectiveCamera(
 );
       
 // camera position for shape to show 
-camera.position.set(0, 0, 35); 
+camera.position.set(-10, 0, 35);
 camera.lookAt(new THREE.Vector3(0, 0, 0));
 
 // alpha true for transparent background
@@ -38,65 +37,65 @@ const uniforms = {
     u_time: { value: 0 }
 };
 
-const material = new THREE.ShaderMaterial({
-    wireframe: true,
-    uniforms: uniforms,
-    vertexShader: `
-    uniform float u_time;
-    void main() {
-    vec3 pos = vec3(position.x, position.y, sin(u_time + position.y) + position.z);
-    gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
-    }
-    `,
-    fragmentShader: `
-    void main() {
-        gl_FragColor = vec4(245.0 / 255.0, 241.0 / 255.0, 237.0 / 255.0, 0.6);
-    }`
-});
 
+    const material = new THREE.ShaderMaterial({
+      wireframe: true,
+      uniforms: uniforms,
+      vertexShader: `
+        uniform float u_time;
+        void main() {
+          vec3 pos = vec3(position.x, position.y, sin(u_time + position.y) + position.z);
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
+        }
+      `,
+      fragmentShader: `
+        void main() {
+          gl_FragColor = vec4(245.0 / 255.0, 241.0 / 255.0, 237.0 / 255.0, 0.6);
+        }
+      `,
+    });
 
+    const mesh = new THREE.Mesh(geometry, material);
 
-const mesh = new THREE.Mesh(geometry, material);
+    mesh.rotation.x = 6;
+    mesh.rotation.y = -6;
+    mesh.rotation.z = 3;
 
-mesh.rotation.x = 6;
-mesh.rotation.y = -6;
-mesh.rotation.z = 3;
+    scene.add(mesh);
 
-scene.add(mesh);
+    const clock = new THREE.Clock();
 
-const clock = new THREE.Clock();
+    const animate = () => {
+      requestAnimationFrame(animate);
 
-const animate = () => {
-requestAnimationFrame(animate);
+      const elapsedTime = clock.getElapsedTime();
+      const speed = 4;
+      uniforms.u_time.value = elapsedTime * speed;
 
-const elapsedTime = clock.getElapsedTime();
-uniforms.u_time.value = elapsedTime;
+      renderer.render(scene, camera);
+    };
 
-renderer.render(scene, camera);
+    animate();
+
+    // Resize handler
+    const handleResize = () => {
+      const newWidth = 400;
+      const newHeight = 300;
+
+      camera.aspect = newWidth / newHeight;
+      camera.updateProjectionMatrix();
+
+      renderer.setSize(newWidth, newHeight);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return <div ref={sceneRef} />;
 };
 
-animate();
-
-  
-// Resize handler
-const handleResize = () => {
-const newWidth = 400;
-const newHeight = 300;
-  
-camera.aspect = newWidth / newHeight;
-camera.updateProjectionMatrix();
-  
-renderer.setSize(newWidth, newHeight);
-};
-  
-window.addEventListener("resize", handleResize);
-  
-return () => {
-window.removeEventListener("resize", handleResize);
-  
-};
-}, []);
-    return <div ref={sceneRef} />;
-  };
-  
 export default ThreeScene;
