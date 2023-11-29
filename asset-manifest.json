@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/jessica/static/css/main.5fa965e1.css",
+    "main.js": "/jessica/static/js/main.79686921.js",
+    "static/media/profilepic.jpg": "/jessica/static/media/profilepic.26a1b53922c4629dadb9.jpg",
+    "index.html": "/jessica/index.html",
+    "main.5fa965e1.css.map": "/jessica/static/css/main.5fa965e1.css.map",
+    "main.79686921.js.map": "/jessica/static/js/main.79686921.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5fa965e1.css",
+    "static/js/main.79686921.js"
+  ]
+}
