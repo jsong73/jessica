@@ -1,7 +1,7 @@
 
 :root {
-    --background-color-light: #eee7e1;
-    --text-color-light: #1a1818;
+    --background-color-light: 	#8a8a8a;
+    --text-color-light: rgb(0, 0, 0);
     
     --background-color-dark:#00000000;
     --text-color-dark: #F5F1ED;
@@ -19,7 +19,7 @@ body.light-mode *{
 
 body.light-mode .header-button {
     color: var(--text-color-light);
-    border:  #919191 solid 2px;
+    border:   #757575 solid 2px;
 }
 
 body.light-mode .header-button a{
@@ -32,11 +32,11 @@ body.light-mode .header-button a:hover{
 
 /* project card light mode */
 body.light-mode .projects-card {
-    background-color:  #dcd4cb;
+    background-color:  #959595;
 }
 
 body.light-mode .projects-card *{
-    background-color:  #dcd4cb;
+    background-color:  #959595;
 }
 
 /* nav light mode */
@@ -52,6 +52,7 @@ body.light-mode .skills li:hover{
 body.light-mode .projects-folder *{
     color: #000000;
 }
+
 
 html {
     scroll-behavior: smooth;
