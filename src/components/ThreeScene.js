@@ -35,15 +35,11 @@ const particles = new THREE.Group();
 const particleCount = 100;
 const particleSize = 0.5;
 
-const bodyElement = document.body;
-
-const isLightMode = bodyElement.classList.contains("light-mode");
 
 const particleMaterial = new THREE.PointsMaterial({
     color:  0xffffff,
     size: particleSize,
   });
-
 
 
 for (let i = 0; i < particleCount; i++) {
