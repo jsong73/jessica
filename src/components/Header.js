@@ -17,7 +17,7 @@ const theme = createTheme({
         fontWeight: "bold",
         fontSize: 80,
         '@media (max-width:600px)': {
-          fontSize: 70,
+          fontSize: 30,
         },
         color: "#F5F1ED",
       },
