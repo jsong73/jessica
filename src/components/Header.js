@@ -16,6 +16,9 @@ const theme = createTheme({
       typeWriter:{
         fontWeight: "bold",
         fontSize: 80,
+        '@media (max-width:600px)': {
+          fontSize: 70,
+        },
         color: "#F5F1ED",
       },
     },
@@ -31,6 +34,7 @@ function Header() {
         
         <Typography variant="typeWriter">
         <Typewriter
+            id="typewriter"
             onInit={(typewriter) => {
               typewriter.typeString("{ hi, i'm jessica } ").start();
             }}
